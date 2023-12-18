@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chess Board</title>
+
+<style>
+
+   #chess-board{ border-collapse: collapse; 
+                 margin: 0 auto; border: none}
+
+   td{ width: 50px; height: 50px; border: none;}
+
+   td:hover{ background-color: #ffa07a; }
+
+   .black{ background-color: #b58863; }
+
+   .white{ background-color: #f0d9b5; }
+
+
+</style>
+
+</head>
+<body>
+
+<table id="chess-board">
+    
+    <tbody>
+        <script>
+        
+        var color = 'white';
+       
+        for(var i = 0; i < 8; i++){
+           
+            document.write("<tr>");
+          
+            for(var j = 0; j < 8; j++){
+
+                document.write("<td class='"+color+"'></td>")
+               
+                color = (color=='white') ? 'black':'white';
+            }
+
+      
+            color = (color=='white') ? 'black':'white'; 
+            
+            document.write("</tr>");
+        }
+
+        </script>
+    </tbody>
+</table>
+
+</body>
+</html>
+
